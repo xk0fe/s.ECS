@@ -1,0 +1,14 @@
+{
+  "Title": "k.ECS",
+  "Type": "library",
+  "Org": "kfe",
+  "Ident": "kecs",
+  "Schema": 1,
+  "IncludeSourceFiles": false,
+  "Resources": null,
+  "PackageReferences": [],
+  "EditorReferences": null,
+  "Mounts": null,
+  "IsStandaloneOnly": false,
+  "Metadata": {}
+}

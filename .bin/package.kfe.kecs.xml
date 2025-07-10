@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>package.kfe.kecs</name>
+    </assembly>
+    <members>
+        <member name="T:Sandbox.k.ECS.Core.Common.SparseSet`1">
+            <summary>
+            A sparse set data structure that efficiently stores entity-value pairs where entities are non-negative integers.
+            Provides O(1) lookup, insertion, and removal operations.
+            </summary>
+            <typeparam name="T">The type of values associated with entities</typeparam>
+        </member>
+        <member name="P:Sandbox.k.ECS.Core.Common.SparseSet`1.Count">
+            <summary>
+            Gets the number of entities in the set
+            </summary>
+        </member>
+        <member name="M:Sandbox.k.ECS.Core.Common.SparseSet`1.Add(System.Int32)">
+            <summary>
+            Adds an entity to the sparse set without an associated value
+            </summary>
+            <param name="entity">The entity ID to add</param>
+        </member>
+        <member name="M:Sandbox.k.ECS.Core.Common.SparseSet`1.Add(System.Int32,`0)">
+            <summary>
+            Adds an entity to the sparse set with an associated value
+            </summary>
+            <param name="entity">The entity ID to add</param>
+            <param name="value">The value to associate with the entity</param>
+        </member>
+        <member name="M:Sandbox.k.ECS.Core.Common.SparseSet`1.Remove(System.Int32)">
+            <summary>
+            Removes an entity from the sparse set
+            </summary>
+            <param name="entity">The entity ID to remove</param>
+        </member>
+        <member name="M:Sandbox.k.ECS.Core.Common.SparseSet`1.Contains(System.Int32)">
+            <summary>
+            Checks if an entity exists in the sparse set
+            </summary>
+            <param name="entity">The entity ID to check</param>
+            <returns>True if the entity exists, false otherwise</returns>
+        </member>
+        <member name="M:Sandbox.k.ECS.Core.Common.SparseSet`1.Clear">
+            <summary>
+            Clears all entities from the sparse set
+            </summary>
+        </member>
+        <member name="M:Sandbox.k.ECS.Core.Common.SparseSet`1.TryGetValue(System.Int32,`0@)">
+            <summary>
+            Tries to get the value associated with an entity
+            </summary>
+            <param name="entity">The entity ID</param>
+            <param name="value">The associated value if found, default otherwise</param>
+            <returns>True if the entity exists, false otherwise</returns>
+        </member>
+        <member name="P:Sandbox.k.ECS.Core.Common.SparseSet`1.Item(System.Int32)">
+            <summary>
+            Gets or sets the value associated with an entity
+            </summary>
+            <param name="entity">The entity ID</param>
+            <returns>The value associated with the entity</returns>
+        </member>
+        <member name="M:Sandbox.k.ECS.Core.Common.SparseSet`1.GetAll">
+            <summary>
+            Gets all entity-value pairs in the sparse set
+            </summary>
+            <returns>An enumerable of KeyValuePair containing entities and their associated values</returns>
+        </member>
+        <member name="M:Sandbox.k.ECS.Core.Common.SparseSet`1.GetEnumerator">
+            <summary>
+            Gets an enumerator that iterates through the entities in the sparse set
+            </summary>
+        </member>
+        <member name="M:Sandbox.k.ECS.Core.Common.SparseSet`1.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            Gets a non-generic enumerator that iterates through the entities in the sparse set
+            </summary>
+        </member>
+        <member name="M:Sandbox.k.ECS.Core.Common.SparseSet`1.EnsureSparseCapacity(System.Int32)">
+            <summary>
+            Ensures the sparse array has enough capacity to store an entity with the given ID
+            </summary>
+            <param name="entity">The entity ID</param>
+        </member>
+    </members>
+</doc>
